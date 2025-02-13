@@ -10,6 +10,7 @@ async function getPost(name) {
     return post;
 }
 
+
 export default async function Post({ params }) {
     const post = await getPost(params.name)
     return (
